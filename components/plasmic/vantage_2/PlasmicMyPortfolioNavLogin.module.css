@@ -1,0 +1,53 @@
+.root {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #5f94c8;
+  min-width: 0;
+}
+.freeBox {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 960px;
+  min-width: 0;
+}
+.freeBox > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 0;
+  margin-left: calc(0px - 15px);
+  width: calc(100% + 15px);
+}
+.freeBox > :global(.__wab_flex-container) > *,
+.freeBox > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox > :global(.__wab_flex-container) > picture > img,
+.freeBox
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 15px;
+}
+.text {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  color: #ffffff;
+  left: auto;
+  top: auto;
+}
+.link {
+  position: relative;
+  color: #003d79;
+  left: auto;
+  top: auto;
+  background: linear-gradient(0deg, #d6d6d6 0%, #ffffff 100%) 0% 0% / 100% 100%
+    repeat;
+  padding: 5px 20px;
+}

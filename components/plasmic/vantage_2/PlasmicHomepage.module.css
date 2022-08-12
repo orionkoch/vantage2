@@ -10,6 +10,16 @@
   min-height: 0;
   padding: 0px;
 }
+.topPageAlert:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+.myPortfolioNavLogin:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
 .section {
   flex-direction: column;
   display: flex;

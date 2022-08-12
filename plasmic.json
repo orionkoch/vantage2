@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -40,6 +40,32 @@
           "cssFilePath": "plasmic/vantage_2/PlasmicHomepage.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "nHD9Ae7fUs",
+          "name": "TopPageAlert",
+          "type": "managed",
+          "projectId": "4873twxeH88i7MYXjYktuR",
+          "renderModuleFilePath": "plasmic/vantage_2/PlasmicTopPageAlert.jsx",
+          "importSpec": {
+            "modulePath": "TopPageAlert.jsx"
+          },
+          "cssFilePath": "plasmic/vantage_2/PlasmicTopPageAlert.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "FjEMMKSOtb",
+          "name": "MyPortfolioNavLogin",
+          "type": "managed",
+          "projectId": "4873twxeH88i7MYXjYktuR",
+          "renderModuleFilePath": "plasmic/vantage_2/PlasmicMyPortfolioNavLogin.jsx",
+          "importSpec": {
+            "modulePath": "MyPortfolioNavLogin.jsx"
+          },
+          "cssFilePath": "plasmic/vantage_2/PlasmicMyPortfolioNavLogin.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [],
@@ -63,6 +89,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.184",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.184/dist/plasmic.schema.json"
+  "cliVersion": "0.1.185",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.185/dist/plasmic.schema.json"
 }

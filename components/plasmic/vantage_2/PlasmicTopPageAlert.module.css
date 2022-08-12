@@ -1,0 +1,16 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-width: 0;
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  min-width: 0;
+  padding: 15px 15px 20px;
+}

@@ -16,6 +16,8 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
+import TopPageAlert from "../../TopPageAlert"; // plasmic-import: nHD9Ae7fUs/component
+import MyPortfolioNavLogin from "../../MyPortfolioNavLogin"; // plasmic-import: FjEMMKSOtb/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_vantage_2.module.css"; // plasmic-import: 4873twxeH88i7MYXjYktuR/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 7BDiKA8AHJMX/css
@@ -51,6 +53,18 @@ function PlasmicHomepage__RenderFunc(props) {
             sty.root
           )}
         >
+          <TopPageAlert
+            data-plasmic-name={"topPageAlert"}
+            data-plasmic-override={overrides.topPageAlert}
+            className={classNames("__wab_instance", sty.topPageAlert)}
+          />
+
+          <MyPortfolioNavLogin
+            data-plasmic-name={"myPortfolioNavLogin"}
+            data-plasmic-override={overrides.myPortfolioNavLogin}
+            className={classNames("__wab_instance", sty.myPortfolioNavLogin)}
+          />
+
           <p.Stack
             as={"section"}
             data-plasmic-name={"section"}
@@ -68,7 +82,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 sty.h1
               )}
             >
-              {"Welcome to your first page Tommy KK!"}
+              {"Welcome to your first page Tommy KKK!"}
             </h1>
 
             <div
@@ -109,7 +123,17 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "h1", "text"],
+  root: [
+    "root",
+    "topPageAlert",
+    "myPortfolioNavLogin",
+    "section",
+    "h1",
+    "text"
+  ],
+
+  topPageAlert: ["topPageAlert"],
+  myPortfolioNavLogin: ["myPortfolioNavLogin"],
   section: ["section", "h1", "text"],
   h1: ["h1"],
   text: ["text"]
@@ -149,6 +173,8 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    topPageAlert: makeNodeComponent("topPageAlert"),
+    myPortfolioNavLogin: makeNodeComponent("myPortfolioNavLogin"),
     section: makeNodeComponent("section"),
     h1: makeNodeComponent("h1"),
     text: makeNodeComponent("text"),
