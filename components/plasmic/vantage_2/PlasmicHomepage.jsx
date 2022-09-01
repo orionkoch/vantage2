@@ -9,6 +9,7 @@
 // Plasmic Project: 4873twxeH88i7MYXjYktuR
 // Component: 7BDiKA8AHJMX
 import * as React from "react";
+import Head from "next/head";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
@@ -33,6 +34,8 @@ function PlasmicHomepage__RenderFunc(props) {
   const $props = args;
   return (
     <React.Fragment>
+      <Head></Head>
+
       <style>{`
         body {
           margin: 0;
